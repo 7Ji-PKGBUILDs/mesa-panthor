@@ -24,7 +24,7 @@ makedepends=('python-mako' 'libxml2' 'libx11' 'xorgproto' 'libdrm' 'libxshmfence
              'systemd' 'valgrind' 'glslang' 'vulkan-icd-loader' 'directx-headers' 'cmake' 'meson')
 url="https://www.mesa3d.org/"
 license=('custom')
-options=('debug' '!lto')
+options=('!lto')
 source=(mesa::git+https://gitlab.freedesktop.org/bbrezillon/mesa.git#branch=${_branch}
         LICENSE
         "001-fix_build_egldriver_EGLAttrib.patch")
